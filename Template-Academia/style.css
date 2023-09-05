@@ -1,0 +1,346 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #fff;
+  overflow-x: hidden;
+  height: 100vh; }
+
+.navbar {
+  background-color: #040D12; 
+  justify-content: space-between;
+  position: fixed;
+  display: flex;
+  max-height: 80px;
+}
+
+  .navbar .btn {
+    font-size: 0.75rem;
+    border-color: #040D12; 
+    display: flex;
+    align-items: center;
+  gap: 12px;
+   }
+
+  .navbar .dropdown-menu {
+    background-color: #040D12; }
+    .navbar .dropdown-menu .dropdown-item {
+      text-align: center;
+      padding: 5px 10px;
+      color: #fff; }
+
+    .navbar .dropdown-menu .dropdown-item:hover {
+      color: #000; }
+
+  .navbar .dropdown-menu:hover {
+    background-color: #040D12; }
+
+#link{
+  color: #fff;
+  font-size: 14px;
+}
+
+@keyframes pular {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-10px); }
+}
+#link:hover{
+  color: red;
+  transform: scale(1.1);
+  animation: pular 1s ease-in-out 3;
+}
+
+#aula{
+
+  color: #fff;
+  background-color: #B31312;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  right: 13%;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+
+}
+
+#aula:hover{
+  box-shadow: 0px 0px 0px red,
+  0 0 25px red;
+  
+}
+
+#butaodanger2{
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  box-shadown: 0 0 5px red;
+  background-color: #B31312;
+  text-decoration: none;
+}
+
+#butaodanger2:hover{
+  background-color: #B31312;
+  color: #fff;
+}
+
+.home{
+  background-color: #FAF3F0;
+}
+
+
+/*********************************/
+/***** REUSEABLE COMPONENTS ******/
+/*********************************/
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.7); }
+
+
+/*********************************/
+/********** HOME SECTION *********/
+/*********************************/
+.home{
+  text-align: center;
+  background-color: #040D12;
+}
+
+#homeimg{
+  max-width: 100%;
+  height: auto;
+}
+
+#home-section {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-image: url(BJJ2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px; }
+
+#home-section .home-inner {
+  padding-top: 140px; }
+
+#home-section .fly-in-text {
+  list-style: none;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+#home-section .fly-in-text li {
+  display: inline-block;
+  opacity: 1;
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease;
+  font-size: 4em;
+  line-height: 1em; }
+
+    
+#home-section .fly-in-text span {
+  display: inline-block;
+  margin-right: 7px; }
+
+
+
+/*********************************/
+/********** TEXT SECTION *********/
+/*********************************/
+#text-section{
+  background-color: #040D12;
+}
+#text-section .row .list-display li {
+  margin-bottom: .4rem;
+  font-size: 1.1rem; 
+}
+#text-section .row .list-checkmarks {
+  padding-left: 1.5rem; 
+}
+#text-section .row .list-checkmarks li {
+  list-style-type: none;
+  padding-left: 1rem; 
+}
+  #text-section .row .list-checkmarks li:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    margin: 0 10px 0 -28px;
+}
+
+/*********************************/
+/******** SLIDER SECTION *********/
+/*********************************/
+.slides{
+  background-color: #040D12;
+  width: 100%; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+#slider {
+background: #000; 
+width: 800px; 
+margin-left: auto;
+margin-right: auto; 
+}
+#slider img {
+  opacity: 0.7;
+  height: 80%;
+  width: 100%; 
+  overflow: auto;
+}
+
+/*****************************/
+/***** FACILITY SECTION ******/
+/*****************************/
+
+#facility-section {
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  width: 100%; 
+}
+
+.contatos-treino{
+  text-decoration: none;
+  color: #B31312;
+  
+}
+
+.contatos-treino:hover{
+  text-decoration: none;
+  animation: pular 1s ease-in-out 3;
+  color: #B31312;
+}
+
+#facility-section .fullscreen-video-wrap {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh; 
+}
+
+#facility-section .fullscreen-video-wrap video {
+  min-width: 100%;
+  min-width: 100%;
+  margin-top: -25px; 
+}
+#facility-section .facility-overlay {
+height: 100vh;
+width: 100vw;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #fff;
+z-index: 1;
+opacity: 0.6; k;
+color: #B31312;
+}
+
+#facility-section .facility-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+color: #B31312;
+}
+
+#facility-section .facility-content h2 {
+white-space: nowrap;
+font-weight: 700; 
+color: #B31312;
+}
+      
+/*****************************/
+/******* SCHEDULE PAGE *******/
+/*****************************/
+
+#schedule-header {
+  background: url(BJJ5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px; }
+
+  #schedule-header .dark-overlay {
+    min-height: 500px;
+    background: red; }
+
+  #schedule-header .schedule-inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%); }
+
+    #schedule-header .schedule-inner h2 {
+      font-size: 4em;
+      font-weight: 400; }
+
+    #schedule-header .schedule-inner h5 {
+      font-size: 1.5em; }
+
+
+/*****************************/
+/******* CONTACT PAGE *******/
+/*****************************/
+
+#contact-header {
+background: url(BJJ5.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 500px; }
+
+#contact-header .dark-overlay {
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.4); }
+
+#contact-header .contact-inner {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%); }
+
+  #contact-header .contact-inner h2 {
+    font-size: 4em;
+    font-weight: 400; }
+
+  #contact-header .contact-inner h5 {
+    font-size: 1.5em; }
+    
+
+#contact-section ul {
+  list-style: none; }
+  #contact-section ul li {
+    margin-left: -2.5rem; }
+#contact-section .jumbotron {
+  margin-left: 3rem; }
+
+#contact-map .contact-info {
+  margin-left: 3rem; }
+
+#contact-map #map {
+  height: 400px;
+  width: 100%; }
+
+footer{
+  background-color: #040D12;
+}
+
+#maps{
+  text-align: center;
+  margin-top: 20px;
+}
